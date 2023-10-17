@@ -24,6 +24,8 @@ async function checkWeather(city){
     document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
     document.querySelector('.wind').innerHTML = data.wind.speed  + " km/h";
 
+    // gestion changement image en fonction des données API
+    
     if(data.weather[0].main == "Clouds"){
         weatherIcon.src = "images/clouds.png";
     }
